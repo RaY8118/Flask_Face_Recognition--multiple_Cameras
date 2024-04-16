@@ -755,4 +755,256 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap_external>", line 975, in get_code
   File "<frozen importlib._bootstrap_external>", line 1074, in get_data
 KeyboardInterrupt
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on https://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 883-705-222
+127.0.0.1 - - [16/Apr/2024 12:59:21] "GET /Attendance_system/login HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 12:59:21] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 12:59:25] "POST /Attendance_system/login HTTP/1.1" 302 -
+D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py:122: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  return db.session.query(Users).get(int(user_id))
+127.0.0.1 - - [16/Apr/2024 12:59:25] "GET /Attendance_system/display_attendance HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 12:59:25] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+2024-04-16
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on https://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 883-705-222
+D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py:122: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  return db.session.query(Users).get(int(user_id))
+127.0.0.1 - - [16/Apr/2024 12:59:52] "GET /Attendance_system/display_attendance HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 12:59:52] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 12:59:53] "GET /Attendance_system/logout HTTP/1.1" 302 -
+127.0.0.1 - - [16/Apr/2024 12:59:53] "GET /Attendance_system/login HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 12:59:53] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 12:59:55] "GET / HTTP/1.1" 404 -
+2024-04-16
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on https://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 883-705-222
+127.0.0.1 - - [16/Apr/2024 13:00:43] "GET /Attendance_system/login HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 13:00:43] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 13:00:45] "GET /Attendance_system HTTP/1.1" 308 -
+127.0.0.1 - - [16/Apr/2024 13:00:45] "GET /Attendance_system/ HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 13:00:45] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 13:00:45] "GET /Attendance_system/video2 HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 13:00:46] "GET /Attendance_system/video1 HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 13:00:51] "GET /Attendance_system/login HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 13:00:51] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+Error on request:
+Traceback (most recent call last):
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\werkzeug\serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\werkzeug\serving.py", line 326, in execute
+    write(data)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\werkzeug\serving.py", line 299, in write
+    self.wfile.write(b"\r\n")
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\socketserver.py", line 826, in write
+    self._sock.sendall(b)
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1237, in sendall
+    v = self.send(byte_view[count:])
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1206, in send
+    return self._sslobj.write(data)
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:2426)
+Error on request:
+Traceback (most recent call last):
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\werkzeug\serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\werkzeug\serving.py", line 326, in execute
+    write(data)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\werkzeug\serving.py", line 299, in write
+    self.wfile.write(b"\r\n")
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\socketserver.py", line 826, in write
+    self._sock.sendall(b)
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1237, in sendall
+    v = self.send(byte_view[count:])
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1206, in send
+    return self._sslobj.write(data)
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:2426)
+127.0.0.1 - - [16/Apr/2024 13:00:58] "POST /Attendance_system/login HTTP/1.1" 302 -
+D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py:122: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  return db.session.query(Users).get(int(user_id))
+127.0.0.1 - - [16/Apr/2024 13:00:58] "GET /Attendance_system/data HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 13:00:58] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 13:01:02] "GET / HTTP/1.1" 404 -
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on https://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 883-705-222
+D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py:122: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  return db.session.query(Users).get(int(user_id))
+127.0.0.1 - - [16/Apr/2024 13:01:25] "GET /Attendance_system/data HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 13:01:25] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 13:01:26] "GET /Attendance_system HTTP/1.1" 308 -
+127.0.0.1 - - [16/Apr/2024 13:01:26] "GET /Attendance_system/ HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 13:01:27] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 13:01:27] "GET /Attendance_system/video2 HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 13:01:27] "GET /Attendance_system/video1 HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 13:01:29] "GET /Attendance_system/login HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 13:01:29] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+Error on request:
+Traceback (most recent call last):
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\werkzeug\serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\werkzeug\serving.py", line 326, in execute
+    write(data)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\werkzeug\serving.py", line 299, in write
+    self.wfile.write(b"\r\n")
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\socketserver.py", line 826, in write
+    self._sock.sendall(b)
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1237, in sendall
+    v = self.send(byte_view[count:])
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1206, in send
+    return self._sslobj.write(data)
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:2426)
+Error on request:
+Traceback (most recent call last):
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\werkzeug\serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\werkzeug\serving.py", line 326, in execute
+    write(data)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\werkzeug\serving.py", line 299, in write
+    self.wfile.write(b"\r\n")
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\socketserver.py", line 826, in write
+    self._sock.sendall(b)
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1237, in sendall
+    v = self.send(byte_view[count:])
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1206, in send
+    return self._sslobj.write(data)
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:2426)
+127.0.0.1 - - [16/Apr/2024 13:01:35] "POST /Attendance_system/login HTTP/1.1" 302 -
+127.0.0.1 - - [16/Apr/2024 13:01:35] "GET /Attendance_system/get_attendance HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 13:01:35] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 13:01:52] "GET / HTTP/1.1" 404 -
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on https://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 883-705-222
+D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py:122: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  return db.session.query(Users).get(int(user_id))
+127.0.0.1 - - [16/Apr/2024 13:02:04] "GET /Attendance_system/get_attendance HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 13:02:04] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 13:02:05] "GET /Attendance_system HTTP/1.1" 308 -
+127.0.0.1 - - [16/Apr/2024 13:02:05] "GET /Attendance_system/ HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 13:02:05] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 13:02:05] "GET /Attendance_system/video2 HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 13:02:06] "GET /Attendance_system/video1 HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 13:02:17] "GET /Attendance_system/login HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 13:02:17] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 13:02:22] "POST /Attendance_system/login HTTP/1.1" 302 -
+127.0.0.1 - - [16/Apr/2024 13:02:22] "GET /Attendance_system/display_attendance HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 13:02:22] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+Error on request:
+Traceback (most recent call last):
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\werkzeug\serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\werkzeug\serving.py", line 326, in execute
+    write(data)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\werkzeug\serving.py", line 299, in write
+    self.wfile.write(b"\r\n")
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\socketserver.py", line 826, in write
+    self._sock.sendall(b)
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1237, in sendall
+    v = self.send(byte_view[count:])
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1206, in send
+    return self._sslobj.write(data)
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:2426)
+Error on request:
+Traceback (most recent call last):
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\werkzeug\serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\werkzeug\serving.py", line 326, in execute
+    write(data)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\werkzeug\serving.py", line 299, in write
+    self.wfile.write(b"\r\n")
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\socketserver.py", line 826, in write
+    self._sock.sendall(b)
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1237, in sendall
+    v = self.send(byte_view[count:])
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1206, in send
+    return self._sslobj.write(data)
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:2426)
+127.0.0.1 - - [16/Apr/2024 13:02:28] "GET /Attendance_system/logout HTTP/1.1" 302 -
+127.0.0.1 - - [16/Apr/2024 13:02:28] "GET /Attendance_system/login HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 13:02:28] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+Parth Ghadi
+Parth Ghadi
+Parth Ghadi
+Parth Ghadi
+Parth Ghadi
+Parth Ghadi
+None
+Parth Ghadi
+End time recorded in the database
+End time recorded in the database
+Parth Ghadi
+Parth Ghadi
+End time recorded in the database
+None
+End time recorded in the database
+End time recorded in the database
+Parth Ghadi
+Parth Ghadi
+End time recorded in the database
+Parth Ghadi
+Parth Ghadi
+End time recorded in the database
+End time recorded in the database
+Parth Ghadi
+Parth Ghadi
+Parth Ghadi
+End time recorded in the database
+None
+Parth Ghadi
+End time recorded in the database
+End time recorded in the database
+None
+Parth Ghadi
+End time recorded in the database
+End time recorded in the database
+Parth Ghadi
+Parth Ghadi
+End time recorded in the database
+End time recorded in the database
+Parth Ghadi
+End time recorded in the database
+Parth Ghadi
+Parth Ghadi
+Parth Ghadi
+End time recorded in the database
+Parth Ghadi
+None
+Parth Ghadi
+End time recorded in the database
+End time recorded in the database
+2024-04-16
+End time recorded in the database
+End time recorded in the database
+End time recorded in the database
+End time recorded in the database
+End time recorded in the database
+End time recorded in the database
+End time recorded in the database
 Terminate batch job (Y/N)? 

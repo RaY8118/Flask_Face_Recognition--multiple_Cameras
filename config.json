@@ -4,7 +4,7 @@
         "camera_index_1": 0,
         "camera_index_2": 1,
         "morning_time": "9",
-        "evening_time": "23",
+        "evening_time": "12",
         "cert_path": "cert.pem",
         "key_path": "key.pem",
         "encoding_file_path": "Resources/EncodeFile.p",

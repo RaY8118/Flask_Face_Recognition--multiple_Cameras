@@ -23,7 +23,7 @@
         </ul>
         {% endif %}
         {% endwith %}
-        <form action="/login" method="post" enctype="multipart/form-data">
+        <form action="/Attendance_system/login" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="username">Username: </label>
                 <input type="text" name="username" id="username"><br><br>
@@ -37,7 +37,8 @@
         </form>
         <a href="{{'register'}}">Dont't have a account! Register here</a>
     </div>
-    <a href="/" onclick="reloadPage()">Go to Index</a>
+        <form action="/Attendance_system/get_attendance" method="GET" enctype="multipart/form-data">
+    <a href="/Attendance_system" onclick="reloadPage()">Go to Index</a>
 
     <script>
         function reloadPage() {

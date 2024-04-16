@@ -11,7 +11,7 @@
 <body>
     <h1>Attendance Query</h1>
     <div class="button-group">
-        <a href="/" onclick="reloadPage()">Go to Index</a>
+        <a href="/Attendance_system" onclick="reloadPage()">Go to Index</a>
         <button type="submit" onclick="logout()">Logout</button>
     </div>
     </div>
@@ -24,7 +24,7 @@
         }
     </script>
     <div class="query">
-        <form action="/get_attendance" method="GET" enctype="multipart/form-data">
+        <form action="/Attendance_system/get_attendance" method="GET" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name">
