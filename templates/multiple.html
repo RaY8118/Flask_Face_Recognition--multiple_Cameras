@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Stream</title>
+</head>
+<body>
+    <h1>Video Stream</h1>
+    <img id="video_feed" src="{{ url_for('video_feed') }}" width="640" height="480" />
+    <br>
+    <button id="switch_button">Switch Video Source</button>
+
+    <script>
+        document.getElementById('switch_button').addEventListener('click', function() {
+            // Send a POST request to switch_video endpoint
+            fetch('/switch_video', { method: 'POST' })
+                .then(response => {
+                    if (response.ok) {
+                        // Refresh the video feed after switching
+                        document.getElementById('video_feed').src = "{{ url_for('video_feed') }}" + "?" + new Date().getTime();
+                    } else {
+                        console.error('Failed to switch video source');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error switching video source:', error);
+                });
+        });
+    </script>
+</body>
+</html>

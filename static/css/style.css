@@ -1,0 +1,124 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+}
+
+.data_form {
+    width: 60%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgb(211, 228, 247);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.login_form {
+    width: 30%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgb(211, 228, 247);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    font-family:Helvetica;
+    text-align: center;
+    margin: 30px auto;
+    font-weight: bolder;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="file"],
+input[type="password"],
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #5292d6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/* attendance table*/
+    table {
+        width: 80%; /* Adjust the width as needed */
+        margin: 0 auto; /* Set left and right margins to auto */
+        border-collapse: collapse;
+        margin-top: 40px;
+    }
+    
+    th {
+        border: 2px solid rgb(51, 50, 50);
+        padding: 8px;
+        text-align: center;
+    }
+
+ td {
+    border: 2px solid rgb(51, 50, 50);
+    padding: 8px;
+    text-align: left;
+}
+
+thead {
+    background-color: rgb(211, 228, 247);
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+    margin: 50px auto;
+    padding: 30px;
+}
+/*attendance query*/
+.query {
+    width: 60%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgb(211, 228, 247);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+/*results*/
+.results {
+    width: 60%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgb(211, 228, 247);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#links{
+    float:right;
+}

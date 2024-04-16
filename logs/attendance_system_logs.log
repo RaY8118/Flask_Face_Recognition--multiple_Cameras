@@ -1,0 +1,758 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 139-394-914
+127.0.0.1 - - [05/Apr/2024 15:22:26] "GET /register HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 15:22:26] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Apr/2024 15:22:27] "GET /register HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 15:22:27] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Apr/2024 15:22:42] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 15:22:42] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Apr/2024 15:22:49] "GET /register HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 15:22:49] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Apr/2024 15:22:54] "GET /register HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 15:22:54] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Apr/2024 15:22:57] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 15:22:57] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Apr/2024 15:22:58] "GET /video2 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 15:22:58] "GET /video1 HTTP/1.1" 200 -
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Terminate batch job (Y/N)? Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 23, in <module>
+    file = open('Resources/EncodeFile.p', 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Resources/EncodeFile.p'
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 139-394-914
+127.0.0.1 - - [05/Apr/2024 15:28:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 15:28:27] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Apr/2024 15:28:27] "GET /video2 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 15:28:28] "GET /video1 HTTP/1.1" 200 -
+None
+None
+None
+None
+None
+None
+None
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 139-394-914
+127.0.0.1 - - [05/Apr/2024 15:30:14] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 15:30:14] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Apr/2024 15:30:14] "GET /video2 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 15:30:14] "GET /video1 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 15:30:17] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 15:30:17] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Apr/2024 15:30:31] "GET /register HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 15:30:31] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Apr/2024 15:30:36] "POST /register HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 15:30:36] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Apr/2024 15:30:48] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 15:30:48] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Apr/2024 15:30:54] "POST /login HTTP/1.1" 302 -
+127.0.0.1 - - [05/Apr/2024 15:30:54] "GET /display_attendance HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 15:30:54] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Apr/2024 15:31:08] "GET /logout HTTP/1.1" 302 -
+127.0.0.1 - - [05/Apr/2024 15:31:08] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 15:31:08] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Apr/2024 15:31:11] "POST /login HTTP/1.1" 302 -
+127.0.0.1 - - [05/Apr/2024 15:31:11] "GET /get_attendance HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 15:31:11] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Apr/2024 15:31:14] "GET /get_attendance?name=&reg_id=&branch=&division=&date=2024-04-05 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 15:31:14] "GET /static/css/style.css HTTP/1.1" 304 -
+<Users 3>
+student
+2024-04-05
+<Users 2>
+teacher
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 139-394-914
+127.0.0.1 - - [05/Apr/2024 15:38:00] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 15:38:00] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Apr/2024 15:38:00] "GET /video2 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 15:38:00] "GET /video1 HTTP/1.1" 200 -
+Parth Ghadi
+Parth Ghadi
+Parth Ghadi
+Parth Ghadi
+Parth Ghadi
+Your Attendance is already recorded before
+Parth Ghadi
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 139-394-914
+127.0.0.1 - - [05/Apr/2024 15:59:58] code 400, message Bad request version ('Ò')
+127.0.0.1 - - [05/Apr/2024 15:59:58] "\x16\x03\x01\x02:\x01\x00\x026\x03\x03ã`¾,>Í\x93\x98\x90øq\x88èZËw\x8d£GÐ~åÐ?Ä4°¾p\x13\x1c³ wR¥\x9bû[.»Md\x85l+\x97»"\x85Ò" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [05/Apr/2024 15:59:58] code 400, message Bad request version ("î\x81\x99½\x8aº\x13ÿ\x13'\x00\x12\x00\x00\x00")
+127.0.0.1 - - [05/Apr/2024 15:59:58] "\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03å\x9dé¸°\x8f'>û«º<[¸H50rD\x8f\x01\x04®\x83\x98kâà2 ò\x1f 4\x18Áé&À¥K G\x8dVÂiKG\x88u¶\x01NAÐ\x9dØ>s²3âÉ¸\x00 JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ºº\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1þ\x0d\x00Ú\x00\x00\x01\x00\x01'\x00 =ýÝ(ä5Ü{vÆö·Rð®]\x7f\x0f\x90§V\x1e*ÕòàÔHËØ³\x12\x00°\x011ß¿\x92àzk\x15½'Lc\x0e«D¿u"{WÐ3êKJ½ØÙU\x9aÄÓ\x16\x9b!ù°\x04\x87E\x09¡\x96\x0eÑ\x83\x0d¾(·pùªÇmÍèDáäó#ÝT©R»D»õ«:CÑþS¡ÕW'@\x0by¤Hõvûl+\x0dÓr{Õ\x14$\x07\x99"\x04^\x19Êa\x04Leo\x1fõ\x85v)×_\x91SèK¥\x03¤\x95§ªûËG·Ú5zK\x07Ocö\x1e\x1b\x9e¶û\x90Õg#«÷Å°\x80$ÉQ\x86Ô\x15Á\x03Ì\x0b\x96? î\x81\x99½\x8aº\x13ÿ\x13'\x00\x12\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [05/Apr/2024 15:59:58] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x1a\x01\x00\x02\x16\x03\x03líÛ~ÜË\x83¾3Æ\x8c¢$%Éày\x0e?')
+127.0.0.1 - - [05/Apr/2024 15:59:58] code 400, message Bad request version ('8å;\xadÎ#f°ü0ÈyÈÛ¿')
+127.0.0.1 - - [05/Apr/2024 15:59:58] "\x16\x03\x01\x02\x1a\x01\x00\x02\x16\x03\x03líÛ~ÜË\x83¾3Æ\x8c¢$%Éày\x0e?\x09ä®téU\x88UU" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [05/Apr/2024 15:59:58] "\x16\x03\x01\x02\x1a\x01\x00\x02\x16\x03\x03Õ¸÷\x9a\x9b¼ôÙ\x1fi\x81æ-\x84¶¹\x1c\x9aéU\x97i\x0cB÷\x08¥?ÿ«!î éKhjoçD#\x92¼x\x81\x1f0\x83\x92ûÿRÞÙÅ[\x10«È!pv\x09\x0cQ\x00 ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01­ªª\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x003\x00+\x00)::\x00\x01\x00\x00\x1d\x00 \x0c\x86øV°í\x03e\x83ònL\x8f\x08\x07ÊC[©©ýâej1\x9a\x18\x18\x0b,~\x19\x00\x0b\x00\x02\x01\x00þ\x0d\x00ú\x00\x00\x01\x00\x01F\x00 å¼LÁôñR1¾µ\\Õk\x9að¼\x7fÊÜ\x80gIßÛ\x1f\x05<tXðN.\x00ÐDQ>!\x1d8å;­Î#f°ü0ÈyÈÛ¿" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [05/Apr/2024 16:00:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 16:00:02] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Apr/2024 16:00:03] "GET /video2 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 16:00:03] "GET /video1 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 16:00:11] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 16:00:11] "GET /static/css/style.css HTTP/1.1" 304 -
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 139-394-914
+127.0.0.1 - - [05/Apr/2024 16:50:44] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 16:50:44] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Apr/2024 16:50:44] "GET /video2 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 16:50:45] "GET /video1 HTTP/1.1" 200 -
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 139-394-914
+127.0.0.1 - - [05/Apr/2024 16:53:41] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 16:53:41] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Apr/2024 16:53:41] "GET /video2 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 16:53:42] "GET /video1 HTTP/1.1" 200 -
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 139-394-914
+127.0.0.1 - - [05/Apr/2024 21:06:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 21:06:54] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Apr/2024 21:06:54] "GET /video2 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 21:06:55] "GET /video1 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2024 21:06:55] "GET /favicon.ico HTTP/1.1" 404 -
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 139-394-914
+127.0.0.1 - - [06/Apr/2024 10:23:40] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 10:23:40] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Apr/2024 10:23:40] "GET /video2 HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 10:23:41] "GET /video1 HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 10:23:41] "GET /favicon.ico HTTP/1.1" 404 -
+Parth Ghadi
+Parth Ghadi
+None
+Parth Ghadi
+None
+Parth Ghadi
+Parth Ghadi
+Start time and student data recorded in the database
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 139-394-914
+127.0.0.1 - - [06/Apr/2024 10:35:46] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 10:35:46] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Apr/2024 10:35:46] "GET /video2 HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 10:35:47] "GET /video1 HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 10:36:12] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 10:36:12] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Apr/2024 10:36:17] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 10:36:17] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Apr/2024 10:36:24] "POST /login HTTP/1.1" 302 -
+127.0.0.1 - - [06/Apr/2024 10:36:24] "GET /display_attendance HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 10:36:24] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Apr/2024 10:36:29] "GET /logout HTTP/1.1" 302 -
+127.0.0.1 - - [06/Apr/2024 10:36:29] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 10:36:29] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Apr/2024 10:36:30] "GET /register HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 10:36:30] "GET /static/css/style.css HTTP/1.1" 304 -
+None
+<Users 3>
+student
+2024-04-06
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 139-394-914
+127.0.0.1 - - [06/Apr/2024 12:42:01] "GET /Attendance_system/login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 12:42:01] "GET /Attendance_system/login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 12:42:01] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Apr/2024 12:42:03] "GET /Attendance_system/register HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 12:42:03] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Apr/2024 12:42:07] "GET /Attendance_system/ HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 12:42:07] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Apr/2024 12:42:08] "GET /Attendance_system/video1 HTTP/1.1" 200 -
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 139-394-914
+127.0.0.1 - - [06/Apr/2024 12:58:03] "GET /Attendance_system/ HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 12:58:03] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Apr/2024 12:58:04] "GET /Attendance_system/video1 HTTP/1.1" 200 -
+[tcp @ 00000296cadc3a80] Connection to tcp://192.168.137.86:8080 failed: Error number -138 occurred
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on https://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 139-394-914
+127.0.0.1 - - [06/Apr/2024 13:03:02] "GET / HTTP/1.1" 404 -
+127.0.0.1 - - [06/Apr/2024 13:03:02] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [06/Apr/2024 13:03:10] "GET /Attendance_system HTTP/1.1" 308 -
+127.0.0.1 - - [06/Apr/2024 13:03:10] "GET /Attendance_system/ HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 13:03:10] "GET /Attendance_system/static/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 13:03:11] "GET /Attendance_system/video1 HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 13:03:23] "GET /Attendance_system/video2 HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 13:03:28] "GET /Attendance_system/login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 13:03:28] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+Error on request:
+Traceback (most recent call last):
+  File "d:\Codes\ML\flask_Face_recognition\.venv\lib\site-packages\werkzeug\serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "d:\Codes\ML\flask_Face_recognition\.venv\lib\site-packages\werkzeug\serving.py", line 326, in execute
+    write(data)
+  File "d:\Codes\ML\flask_Face_recognition\.venv\lib\site-packages\werkzeug\serving.py", line 299, in write
+    self.wfile.write(b"\r\n")
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\socketserver.py", line 826, in write
+    self._sock.sendall(b)
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1237, in sendall
+    v = self.send(byte_view[count:])
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1206, in send
+    return self._sslobj.write(data)
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:2426)
+127.0.0.1 - - [06/Apr/2024 13:03:34] "GET /Attendance_system/register HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 13:03:34] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Apr/2024 13:03:41] "GET /Attendance_system/login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 13:03:41] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+[tcp @ 0000022e1c5e3580] Connection to tcp://192.168.137.86:8080 failed: Error number -138 occurred
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 139-394-914
+127.0.0.1 - - [06/Apr/2024 20:10:42] code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01Í')
+127.0.0.1 - - [06/Apr/2024 20:10:42] "\x16\x03\x01\x02:\x01\x00\x026\x03\x035ä[\x9f'\x92ûy´U\x00ÆÞ\x11\x9e'\x0d×_Ú\x09\x9fØ¤Úx\x83¶ó\x05\x10\x0f Ø\x15<#Û÷.z\x13MI\x94\x15l7\x04ÒÄ\x19\x90V\x94\x18\x01ÊïX Ð\x14\x12e\x00 ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01Í" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [06/Apr/2024 20:10:42] code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01Í')
+127.0.0.1 - - [06/Apr/2024 20:10:42] "\x16\x03\x01\x02:\x01\x00\x026\x03\x03b­}wt¦4}Ýý@yÌÂ\x9a)ú\x1aª½µ¿Î\x84\x83ø£§à"\x0eé é?û\x9cV\x13éVÞé\x10ÉÜÜ\x86'tØ,\x14¿ëú\x07\x91\x9dhÄZx;\x94\x00 úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01Í" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [06/Apr/2024 20:10:42] code 400, message Bad request version ('\x00ð2\x13/éÁ´T¤\x8f')
+127.0.0.1 - - [06/Apr/2024 20:10:42] "\x16\x03\x01\x02:\x01\x00\x026\x03\x03\x8f\x88\x13Qõ\x08;xã\x99\x83ö"'aWI\x8aØ\x95æ:%T\\Ýz(-)ø\x1a {§jS_\x9b\x02ûªî\x19¯&ØÐ»Fù\x06\x1eI~Òz\x07\x13\x0d½Op\x1dM\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01Í\x9a\x9a\x00\x00\x00\x17\x00\x00þ\x0d\x01\x1a\x00\x00\x01\x00\x01Ð\x00 \x93g{¥W*P\x15ì®|\x079z\x9aú°¿í#´joó\x93USä\x8e×"\x0b\x00ð2\x13/éÁ´T¤\x8f" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [06/Apr/2024 20:10:42] code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+127.0.0.1 - - [06/Apr/2024 20:10:42] "\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03JÁ\x09Ð´ôòA/\x8dCVgÞI\x84ë>uÚamñKS]\x9bÝq°0© ³\x1eúï\x18;eÅW Oª:t÷mH\x1f·\x01î\x9f\x11(Á\x9e5\x9b\x02Þ\x95ò\x00 ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93úú\x00\x00\x00\x0b\x00\x02\x01\x00\x00" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [06/Apr/2024 20:10:42] code 400, message Bad request version ('¯¯LP\x81\x9a\x7f@\x1b1\x1b\x81½Á2ë\x003\x00+\x00)')
+127.0.0.1 - - [06/Apr/2024 20:10:42] "\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x81ª\x8bTÑ¶Á\x8c\x9f\x05ô,°\x8aÉº}êôÌ¼á&\x8aÀ\x81\x16ù\x9c±¯ä \x7fÊ\x0ehBü4ÿ\x9eÀ`õï]I\\\x03\x04,íé.p6yÆ\x90ºÖm\x0de\x00 ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93::\x00\x00\x00-\x00\x02\x01\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1þ\x0d\x00Ú\x00\x00\x01\x00\x01%\x00 2\x8eJ\x08ûÓ\x1c>\x05­"à-\x89·6óKU8²\x0dU\x0cM\x85ª\x89D\x9eE\x0e\x00°\x03\x98Ã\x16|!+:V\x95\x12\x02ï/H\x1dC\x11ÌV9\x80;n×0ðO\x90¢\x03wéüÊ$ä%\x0fy±\x99ê\x12\x14\x8a\x0d\x1b¢\x93$«¼`x\x88ÉPÃñÕ\x84ñ à\x0cÂ\x88·w&?\x1a\x94°Í\x0c\x02 x¹½°ªg\x07a¾êr¿¥\x0f\x1a\x87à{Ùë½\x00µ¯\x04\x93öéêÄ\x9fR±ÿ²\x1bß\x01û6Wÿ\x18O0¤61\x0cûÐ\x04\x08Bôê~ c=\x84y\x8fÝ\x9c·¶¨àíè1éøÙ\x86®.éL\x0c¯¯LP\x81\x9a\x7f@\x1b1\x1b\x81½Á2ë\x003\x00+\x00)" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [06/Apr/2024 20:10:42] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03Þ¢\x0e]\x8f!³\x94_±\x1aÏ»£x\x0f¤½gâøJ_Dg?\x8f&£\x8dò')
+127.0.0.1 - - [06/Apr/2024 20:10:42] "\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03Þ¢\x0e]\x8f!³\x94_±\x1aÏ»£x\x0f¤½gâøJ_Dg?\x8f&£\x8dò" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [06/Apr/2024 20:10:46] "GET /Attendance_system/register HTTP/1.1" 404 -
+127.0.0.1 - - [06/Apr/2024 20:10:49] "GET /Attendance_system/ HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 20:10:49] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Apr/2024 20:10:50] "GET /Attendance_system/video1 HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2024 20:11:00] code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+127.0.0.1 - - [06/Apr/2024 20:11:00] "\x16\x03\x01\x02:\x01\x00\x026\x03\x03Ý\x02bþF±Ï`2¡î=<\x94ÅiÄ\x9dpBÔ×®nç\x17~La¼<S ¹eF\x02¥rÍÚô.\x86&zä\x02?\x05åkj\x05§î\x00-\x16=G\x7f\x04\x01\x9c\x00 \x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01ÍZZ\x00\x00þ\x0d\x01\x1a\x00\x00\x01\x00\x01ü\x00 ³úÿf:7ßÉ!r^\x81¨26¶Õ\x9d`ß²ûxq\x99âØH­ÀIN\x00ð\x0dË4Q\x0e{ìÍh\x90Æ@Ð\x96ÿg\x07\x16I7((sf\x1eÙ\x02ÿ\x90°0ÅÆ\x9aümu\x04.AÉ\x87÷Mdl\x01Ç\x13\x92\x9bÆ\x9bÓé·2ÐØ\x8e\x1eêÛ5Ç\x0e\x0eß­/ sOGð¾[Á;4j\x84ì\x96.\x8b»PeÍ\x82\x86÷ ÿçg®EÆª\x86?&\x05&k\x18DÈ\x98\x91ºÂ»\x1dÙ3ï_Ó©\x1ag«Ë\x1c¹ÓjØ\\\x8e\x1bË¯\x1eSño+'!ÍªF\x81-R2]ê\x91\x8cN÷á\x89ÛL1_\x04\x83À\x0bb\x12Ð}#l\x00ü¸|äÿ-F¿>Ì\x89\x18íL9ÕGö¹\x9c±2\x9eñery\x06Ðô\x0fÚ\x8fäDa\x1f £\x97Î¸\x8eíÕC\x0c#`\x12\x01°¼\x19ãÑö\x16kg\x06YM\x84î£\x0eÿ\x01\x00\x01\x00\x003\x00+\x00)\x9a\x9a\x00\x01\x00\x00\x1d\x00 ;\x88\x0b\x09Y¡øìyhµ¡òiÖ\x13Êî\x02Zà\x0c¦©³¿G\x9b3\x8f\x95s\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x17\x00\x00\x00#\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00+\x00\x07\x06\x1a\x1a\x03\x04\x03\x03\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00-\x00\x02\x01\x01\x00\x12\x00\x00Di\x00\x05\x00\x03\x02h2\x00\x0b\x00\x02\x01\x00\x00" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [06/Apr/2024 20:11:00] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00#\x00\x00\x00')
+127.0.0.1 - - [06/Apr/2024 20:11:00] "\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03®F\x19aØQ\x10Ú\x00IÁÌ\x8eÜÖGí\x1f\x7f¾2¨fõ{\x8dKj¯E8j 0>\x93¶\x84+\x8bñ¥5AâIìÖ7\x84iölò\x1e\x98éRlªç\x98\x81Õ$\x00 ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93JJ\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00#\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [06/Apr/2024 20:11:00] code 400, message Bad request version ('¿,~q¬')
+127.0.0.1 - - [06/Apr/2024 20:11:00] "\x16\x03\x01\x02:\x01\x00\x026\x03\x03ë¶ºaé\x0f\x9a#\x0fÈ\x9f]Á\x9bÇ¹\x97T÷M\x0dLÉ\x85°p.\x01Îå@Æ 4æfL/}9Ã\x8b\x88#J-íÞ\x9a\x16£\x17ÛlÞ\x07\x91.\x82\x9d:]\x8a°\x00\x00 ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01Í\x1a\x1a\x00\x00þ\x0d\x01\x1a\x00\x00\x01\x00\x01é\x00 N\x1e¿,~q¬\x1c" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [06/Apr/2024 20:11:00] code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\xad::\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00')
+127.0.0.1 - - [06/Apr/2024 20:11:00] "\x16\x03\x01\x02\x1a\x01\x00\x02\x16\x03\x03míåç8\x9f\x19\x17]\x0b\x03è9\x90\x8dy\x99y\x1dRæÁ@ïuÊjGÒÃ\x16÷ ¤;æùÞz3¾(á®I9\x8dïÎð-\x80:a\x05\x83\x13_MF\x88ÚñÊ7\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01­::\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [06/Apr/2024 20:11:00] code 400, message Bad request version ('¡ÛÉÕk\x83º\x1aNê1Ô')
+127.0.0.1 - - [06/Apr/2024 20:11:00] "\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03@Ä\x862\x10¦Ãó\x8b¬\x0d\x9eó\x7fx\x11N\x0e\x06J¥\x91´·$zD[O¸5Ë ¾µ·.ïö\x98[\x08 !\\N\x06\x87\x1c¹¹Ýæ¦\\g!2èIÓññ§ö\x00 úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93**\x00\x00\x00-\x00\x02\x01\x01\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x003\x00+\x00)::\x00\x01\x00\x00\x1d\x00 \x86×\x8bï\x13\x06\x99s+×­p\x85\x18W¤ðE\x96>ÆÄ\x80R±Ð,"\x90\x9eeK\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00#\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x12\x00\x00Di\x00\x05\x00\x03\x02h2\x00\x0b\x00\x02\x01\x00\x00+\x00\x07\x06**\x03\x04\x03\x03þ\x0d\x00º\x00\x00\x01\x00\x01Ó\x00 |ÐKtùóØ1*­RØÞÐ\x8eG\x0dSv2ã±\x91\x9fd\x06yÉÏ\x9d.\x14\x00\x90þ\x82'\x1c¡ÛÉÕk\x83º\x1aNê1Ô" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [06/Apr/2024 20:11:00] code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+127.0.0.1 - - [06/Apr/2024 20:11:00] "\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03/éø\x03\x189P¢ºl\x09;H3D\x9d¼Ì`T\x9dÑ¨=\x17×\x91W\x95\x95cÄ \x8a\x08>¿ÄÎÛ\x9aÒ\x04\x8b»´\x03\x85\x06hR7d]Í]Il\\H\x81K¥~q\x00 ::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ÚÚ\x00\x00\x003\x00+\x00)\x9a\x9a\x00\x01\x00\x00\x1d\x00 ãá\x10ö]<\x19\x00\x80LÿÞÕh®ó\x94ª\x86nðzc½\x89¯¸ë\x1a°\x9f~\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01ÿ\x01\x00\x01\x00\x00+\x00\x07\x06êê\x03\x04\x03\x03\x00\x17\x00\x00\x00#\x00\x00Di\x00\x05\x00\x03\x02h2\x00\x0b\x00\x02\x01\x00\x00" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [06/Apr/2024 20:11:00] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00-\x00\x02\x01\x01\x00')
+127.0.0.1 - - [06/Apr/2024 20:11:00] "\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03{C\x06õ\x91Ws¿F8\x82\x82e\x87Ãî\x9fw-»"Î¶-k\x9d\x96TÚ\x12lã \x06\x1d\x03/\x87\x1f\x9b\x92ZA \x14A\x18\x14CãÇ\x1a*\x88"}#ÉVJG\x9eÇ\x96^\x00 ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93\x8a\x8a\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00-\x00\x02\x01\x01\x00" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [06/Apr/2024 20:11:00] code 400, message Bad request version ('::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01Íªª\x00\x00\x00#\x00\x00\x00')
+127.0.0.1 - - [06/Apr/2024 20:11:00] "\x16\x03\x01\x02:\x01\x00\x026\x03\x03ù\x03x;KÛ|\x98\x0cBïÏT]\x04\x9az\x05\x84\x8c8dY6\x16¤,,\x00O]­ ü&¬ÐYCE'7\x96aòJ=\x14wàt\x02\x03o8*¶¸f\x00´ªlña\x00 ::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01Íªª\x00\x00\x00#\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+[tcp @ 000002a6550d3cc0] Connection to tcp://192.168.137.86:8080 failed: Error number -138 occurred
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 139-394-914
+127.0.0.1 - - [12/Apr/2024 12:58:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [12/Apr/2024 12:58:28] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Apr/2024 12:58:30] "GET /video1 HTTP/1.1" 200 -
+[tcp @ 0000019720523880] Connection to tcp://192.168.137.86:8080 failed: Error number -138 occurred
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 139-394-914
+127.0.0.1 - - [14/Apr/2024 15:54:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [14/Apr/2024 15:54:11] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [14/Apr/2024 15:54:13] "GET /video1 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Apr/2024 15:54:34] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [14/Apr/2024 15:54:34] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [14/Apr/2024 15:54:34] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [14/Apr/2024 15:54:46] "POST /login HTTP/1.1" 302 -
+127.0.0.1 - - [14/Apr/2024 15:54:46] "GET /display_attendance HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "d:\Codes\ML\flask_Face_recognition\.venv\lib\site-packages\flask\app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "d:\Codes\ML\flask_Face_recognition\.venv\lib\site-packages\flask\app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "d:\Codes\ML\flask_Face_recognition\.venv\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\Codes\ML\flask_Face_recognition\.venv\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\Codes\ML\flask_Face_recognition\.venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\Codes\ML\flask_Face_recognition\.venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "d:\Codes\ML\flask_Face_recognition\.venv\lib\site-packages\flask_login\utils.py", line 284, in decorated_view
+    elif not current_user.is_authenticated:
+  File "d:\Codes\ML\flask_Face_recognition\.venv\lib\site-packages\werkzeug\local.py", line 311, in __get__
+    obj = instance._get_current_object()
+  File "d:\Codes\ML\flask_Face_recognition\.venv\lib\site-packages\werkzeug\local.py", line 515, in _get_current_object
+    return get_name(local())
+  File "d:\Codes\ML\flask_Face_recognition\.venv\lib\site-packages\flask_login\utils.py", line 25, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "d:\Codes\ML\flask_Face_recognition\.venv\lib\site-packages\flask_login\utils.py", line 370, in _get_user
+    current_app.login_manager._load_user()
+AttributeError: 'Flask' object has no attribute 'login_manager'
+127.0.0.1 - - [14/Apr/2024 15:54:46] "GET /display_attendance?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+127.0.0.1 - - [14/Apr/2024 15:54:46] "GET /display_attendance?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+127.0.0.1 - - [14/Apr/2024 15:54:46] "GET /display_attendance?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+127.0.0.1 - - [14/Apr/2024 15:54:46] "GET /display_attendance?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+127.0.0.1 - - [14/Apr/2024 15:55:07] "GET /register HTTP/1.1" 200 -
+127.0.0.1 - - [14/Apr/2024 15:55:07] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [14/Apr/2024 15:55:10] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [14/Apr/2024 15:55:10] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [14/Apr/2024 15:55:17] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [14/Apr/2024 15:55:17] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [14/Apr/2024 15:55:17] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [14/Apr/2024 15:55:17] "GET /video1 HTTP/1.1" 200 -
+Parth Ghadi
+Parth Ghadi
+Parth Ghadi
+Parth Ghadi
+Parth Ghadi
+Parth Ghadi
+Parth Ghadi
+Parth Ghadi
+Start time and student data recorded in the database
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+<Users 4>
+student
+[tcp @ 00000263513f3880] Connection to tcp://192.168.137.86:8080 failed: Error number -138 occurred
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 883-705-222
+127.0.0.1 - - [16/Apr/2024 09:21:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 09:21:15] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 09:21:16] "GET /video1 HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 09:21:24] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 09:21:24] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 09:21:34] "POST /login HTTP/1.1" 302 -
+D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py:121: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  return Users.query.get(int(user_id))
+127.0.0.1 - - [16/Apr/2024 09:21:34] "GET /display_attendance HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 09:21:34] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 09:21:36] "GET /logout HTTP/1.1" 302 -
+127.0.0.1 - - [16/Apr/2024 09:21:36] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 09:21:36] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 09:21:42] "POST /login HTTP/1.1" 302 -
+127.0.0.1 - - [16/Apr/2024 09:21:42] "GET /get_attendance HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 09:21:42] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 09:21:47] "GET /get_attendance?name=&reg_id=&branch=&division=&date=2024-04-15 HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 09:21:47] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 09:21:52] "GET /get_attendance?name=&reg_id=&branch=&division=&date=2024-04-09 HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 09:21:52] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 09:22:21] "GET /get_attendance?name=&reg_id=16122&branch=&division=&date= HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 09:22:21] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 09:22:29] "GET /video2 HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 09:23:12] "GET /get_attendance?name=&reg_id=16122&branch=&division=&date= HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 09:23:12] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 09:23:32] "GET /get_attendance?name=&reg_id=&branch=&division=&date=2024-04-09 HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 09:23:32] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 09:23:44] "GET /get_attendance?name=&reg_id=&branch=&division=&date=2024-04-06 HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 09:23:44] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 09:23:58] "GET /get_attendance?name=&reg_id=&branch=&division=&date=2024-04-05 HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 09:23:58] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 09:24:18] "GET /logout HTTP/1.1" 302 -
+127.0.0.1 - - [16/Apr/2024 09:24:18] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 09:24:18] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 09:24:25] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 09:24:25] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 09:24:26] "GET /video1 HTTP/1.1" 200 -
+student
+2024-04-16
+teacher
+[tcp @ 00000210624c2980] Connection to tcp://192.168.137.86:8080 failed: Error number -138 occurred
+[tcp @ 00000210624c3580] Connection to tcp://192.168.137.86:8080 failed: Error number -138 occurred
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 883-705-222
+127.0.0.1 - - [16/Apr/2024 09:25:14] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 09:25:14] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 09:25:15] "GET /video1 HTTP/1.1" 200 -
+None
+None
+None
+None
+None
+None
+None
+Error: (MySQLdb.IntegrityError) (1048, "Column 'name' cannot be null")
+[SQL: INSERT INTO attendance (name, start_time, end_time, date, roll_no, division, branch, reg_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (None, '09:25:55', None, datetime.date(2024, 4, 16), None, None, None, '16122')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Error: (MySQLdb.IntegrityError) (1048, "Column 'name' cannot be null")
+[SQL: INSERT INTO attendance (name, start_time, end_time, date, roll_no, division, branch, reg_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (None, '09:25:55', None, datetime.date(2024, 4, 16), None, None, None, '16122')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+None
+None
+None
+Error: (MySQLdb.IntegrityError) (1048, "Column 'name' cannot be null")
+[SQL: INSERT INTO attendance (name, start_time, end_time, date, roll_no, division, branch, reg_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (None, '09:25:56', None, datetime.date(2024, 4, 16), None, None, None, '16122')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+None
+Error: (MySQLdb.IntegrityError) (1048, "Column 'name' cannot be null")
+[SQL: INSERT INTO attendance (name, start_time, end_time, date, roll_no, division, branch, reg_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (None, '09:25:57', None, datetime.date(2024, 4, 16), None, None, None, '16122')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+None
+Error: (MySQLdb.IntegrityError) (1048, "Column 'name' cannot be null")
+[SQL: INSERT INTO attendance (name, start_time, end_time, date, roll_no, division, branch, reg_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (None, '09:25:57', None, datetime.date(2024, 4, 16), None, None, None, '16122')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+None
+Error: (MySQLdb.IntegrityError) (1048, "Column 'name' cannot be null")
+[SQL: INSERT INTO attendance (name, start_time, end_time, date, roll_no, division, branch, reg_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (None, '09:25:57', None, datetime.date(2024, 4, 16), None, None, None, '16122')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+None
+Error: (MySQLdb.IntegrityError) (1048, "Column 'name' cannot be null")
+[SQL: INSERT INTO attendance (name, start_time, end_time, date, roll_no, division, branch, reg_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (None, '09:25:58', None, datetime.date(2024, 4, 16), None, None, None, '16122')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+None
+Error: (MySQLdb.IntegrityError) (1048, "Column 'name' cannot be null")
+[SQL: INSERT INTO attendance (name, start_time, end_time, date, roll_no, division, branch, reg_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (None, '09:25:58', None, datetime.date(2024, 4, 16), None, None, None, '16122')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Error: (MySQLdb.IntegrityError) (1048, "Column 'name' cannot be null")
+[SQL: INSERT INTO attendance (name, start_time, end_time, date, roll_no, division, branch, reg_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (None, '09:25:58', None, datetime.date(2024, 4, 16), None, None, None, '16122')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Error: (MySQLdb.IntegrityError) (1048, "Column 'name' cannot be null")
+[SQL: INSERT INTO attendance (name, start_time, end_time, date, roll_no, division, branch, reg_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (None, '09:25:59', None, datetime.date(2024, 4, 16), None, None, None, '16122')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Error: (MySQLdb.IntegrityError) (1048, "Column 'name' cannot be null")
+[SQL: INSERT INTO attendance (name, start_time, end_time, date, roll_no, division, branch, reg_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (None, '09:25:59', None, datetime.date(2024, 4, 16), None, None, None, '16122')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Error: (MySQLdb.IntegrityError) (1048, "Column 'name' cannot be null")
+[SQL: INSERT INTO attendance (name, start_time, end_time, date, roll_no, division, branch, reg_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (None, '09:26:00', None, datetime.date(2024, 4, 16), None, None, None, '16122')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Error: (MySQLdb.IntegrityError) (1048, "Column 'name' cannot be null")
+[SQL: INSERT INTO attendance (name, start_time, end_time, date, roll_no, division, branch, reg_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (None, '09:26:00', None, datetime.date(2024, 4, 16), None, None, None, '16122')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Error: (MySQLdb.IntegrityError) (1048, "Column 'name' cannot be null")
+[SQL: INSERT INTO attendance (name, start_time, end_time, date, roll_no, division, branch, reg_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (None, '09:26:01', None, datetime.date(2024, 4, 16), None, None, None, '16122')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Error: (MySQLdb.IntegrityError) (1048, "Column 'name' cannot be null")
+[SQL: INSERT INTO attendance (name, start_time, end_time, date, roll_no, division, branch, reg_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (None, '09:26:01', None, datetime.date(2024, 4, 16), None, None, None, '16122')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+[tcp @ 0000020925243880] Connection to tcp://192.168.137.86:8080 failed: Error number -138 occurred
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 883-705-222
+127.0.0.1 - - [16/Apr/2024 10:12:18] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 10:12:18] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 10:12:22] "POST /login HTTP/1.1" 302 -
+127.0.0.1 - - [16/Apr/2024 10:12:22] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 10:12:22] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 10:12:26] "POST /login HTTP/1.1" 302 -
+D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py:122: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  return db.session.query(Users).get(int(user_id))
+127.0.0.1 - - [16/Apr/2024 10:12:26] "GET /display_attendance HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 10:12:26] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 10:12:28] "GET /logout HTTP/1.1" 302 -
+127.0.0.1 - - [16/Apr/2024 10:12:28] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 10:12:28] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 10:12:29] "GET /register HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 10:12:29] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 10:12:41] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 10:12:41] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 10:13:01] "POST /login HTTP/1.1" 302 -
+127.0.0.1 - - [16/Apr/2024 10:13:01] "GET /data HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 10:13:01] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 10:13:07] "GET /logout HTTP/1.1" 302 -
+127.0.0.1 - - [16/Apr/2024 10:13:07] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 10:13:07] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 10:13:11] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 10:13:12] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 10:13:12] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2024 10:13:12] "GET /video2 HTTP/1.1" 200 -
+127.0.0.1 - - [16/Apr/2024 10:13:13] "GET /video1 HTTP/1.1" 200 -
+2024-04-16
+None
+Parth Ghadi
+Parth Ghadi
+Parth Ghadi
+Parth Ghadi
+Parth Ghadi
+Parth Ghadi
+Parth Ghadi
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+Traceback (most recent call last):
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 2, in <module>
+    from flask_login import LoginManager, UserMixin, login_user, logout_user, current_user, login_required
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_data
+KeyboardInterrupt
+Terminate batch job (Y/N)? 

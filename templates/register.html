@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Register Page</title>
+</head>
+
+<body>
+    <h1>Register Page</h1>  
+
+    <div class="login_form">
+       <form method="POST" action="/register">
+            <div class="form-group">
+                <label for="username">Username: </label>
+                <input type="text" name="username" id="username"><br><br>
+            </div>
+            <div class="form-group">
+                <label for="reg_id">Registeration ID: </label>
+                <input type="text" name="reg_id" , id="reg_id"><br><br>
+            </div>
+            <div class="form-group">
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password"><br><br>
+            </div>
+            <div class="form-group">
+                <label for="role">Role: </label>
+                <select name="role" id="role">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="admin">Admin</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button><br><br>
+        </form>
+        <a href="{{'login'}}">Already have a account! Login here</a>
+    </div>
+
+    {%if error%}
+    <p class="error">{{error}}</p>
+    {%endif%}
+    <a href="/" onclick="reloadPage()">Go to Index</a>
+
+    <script>
+        function reloadPage() {
+            location.reload();
+        }
+    </script>
+</body>
+
+</html>

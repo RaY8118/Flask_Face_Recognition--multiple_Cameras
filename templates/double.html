@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Streams</title>
+</head>
+<body>
+    <h1>Video Streams</h1>
+    <div style="display: flex;">
+        <!-- Video stream 1 -->
+        <div>
+            <h2>Video Stream 1</h2>
+            <div class="container">
+                <img src="{{ url_for('video1') }}" width="75%" id="webcam">
+            </div>
+        </div>
+        <!-- Video stream 2 -->
+        <div>
+            <h2>Video Stream 2</h2>
+            <div class="container">
+                <img src="{{ url_for('video2') }}" width="75%" id="webcam">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

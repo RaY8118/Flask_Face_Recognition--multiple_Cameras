@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Attendance Data</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button-group {
+            margin-top: 20px;
+        }
+
+        .button-group button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        <ul>
+            {% for category, message in messages %}
+            <div class="alert alert-{{ category }}">
+                {{ message }}
+              </div>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+        <h1>Attendance Data</h1>
+        <h2>Attendance for date {{ current_date }}</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Start Time</th>
+                    <th>End Time</th>
+                    <th>Date</th>
+                    <th>Roll No</th>
+                    <th>Division</th>
+                    <th>Branch</th>
+                    <th>Registration No</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for record in data %}
+                <tr>
+                    <td>{{ record.id }}</td>
+                    <td>{{ record.name }}</td>
+                    <td>{{ record.start_time }}</td>
+                    <td>{{ record.end_time }}</td>
+                    <td>{{ record.date }}</td>
+                    <td>{{ record.roll_no }}</td>
+                    <td>{{ record.division }}</td>
+                    <td>{{ record.branch }}</td>
+                    <td>{{ record.reg_id }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div class="button-group">
+            <a href="/" onclick="reloadPage()">Go to Index</a>
+            <button type="submit" onclick="logout()">Logout</button>
+        </div>
+    </div>
+    <script>
+        function reloadPage() {
+            location.reload();
+        }
+        function logout() {
+            window.location.href = "{{ url_for('logout') }}";
+        }
+    </script>
+</body>
+
+</html>
