@@ -9,8 +9,6 @@
 </head>
 
 <body>
-    <h1>Add Student Data</h1>
-
     {% with messages = get_flashed_messages() %}
     {% if messages %}
     <ul class="flash-messages">
@@ -53,14 +51,11 @@
             </div>
         </form>
         <a href="/Attendance_system" onclick="reloadPage()">Go to Index</a>
-        <a href="/Attendance_system/logout">Logout</a>
-        
-        <!-- Button to generate encodings -->
-        <form action="/generate_encodings" method="post">
-            <div class="form-group">
-                <button type="submit">Generate Encodings</button>
-            </div>
+        <a href="/Attendance_system/images" onclick="reloadPage()">Images</a>
+        <form action="{{ url_for('logout') }}" method="post" id="logoutForm">
+            <button type="submit">Logout</button>
         </form>
+        
     </div>
 
     <script>

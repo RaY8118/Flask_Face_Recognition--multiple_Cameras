@@ -38,6 +38,13 @@
         {% endwith %}
         <h1>Attendance Data</h1>
         <h2>Attendance for date {{ current_date }}</h2>
+        <form action="/Attendance_system/display_attendance" method="post">
+            <div class="form-group">
+                <label for="date">Date :</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
         <table>
             <thead>
                 <tr>
@@ -70,15 +77,14 @@
         </table>
         <div class="button-group">
             <a href="/" onclick="reloadPage()">Go to Index</a>
-            <button type="submit" onclick="logout()">Logout</button>
+            <form action="{{ url_for('logout') }}" method="post" id="logoutForm">
+                <button type="submit">Logout</button>
+            </form>
         </div>
     </div>
     <script>
         function reloadPage() {
             location.reload();
-        }
-        function logout() {
-            window.location.href = "{{ url_for('logout') }}";
         }
     </script>
 </body>

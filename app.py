@@ -1,6 +1,12 @@
-from flask import Flask, render_template, Response, flash, request, redirect, url_for, session, make_response, flash
+from flask import Flask, render_template, Response, flash, request, redirect, url_for, session, make_response, flash, send_from_directory
 from flask_login import LoginManager, UserMixin, login_user, logout_user, current_user, login_required
 from flask_bcrypt import Bcrypt
+from flask_migrate import Migrate
+from flask_sqlalchemy import SQLAlchemy
+from werkzeug.utils import secure_filename
+from werkzeug.middleware.dispatcher import DispatcherMiddleware
+from werkzeug.exceptions import NotFound
+from sqlalchemy.exc import SQLAlchemyError
 import cv2
 import pickle
 import numpy as np
@@ -11,17 +17,11 @@ from datetime import time as datetime_time
 import time
 import threading
 import os
-from flask_sqlalchemy import SQLAlchemy
-from werkzeug.utils import secure_filename
-from werkzeug.middleware.dispatcher import DispatcherMiddleware
-from werkzeug.exceptions import NotFound
 import csv
 import io
 import logging
 import json
-from flask_login import login_manager, login_required
-from flask_migrate import Migrate
-
+import re
 
 
 # Opening all the necessary files needed
@@ -84,7 +84,6 @@ class Student_data(db.Model):
     regid = db.Column(db.String(80), unique=True, nullable=False)
     
 
-
 # Model of Attendance table
 class Attendance(db.Model):
     __tablename__ = 'attendance'
@@ -114,7 +113,6 @@ class Users(db.Model, UserMixin):
 
     def get_id(self):
         return str(self.id)
-
 
 
 @login_manager.user_loader
@@ -193,11 +191,17 @@ def eveningattendance(name, current_date):
                 Attendance.date == current_date,
                 Attendance.start_time != None
             ).first()
+            recorded_entry = Attendance.query.filter(
+                Attendance.name == name,
+                Attendance.end_time != None
+            ).first()
 
-            if existing_entry:
+            if existing_entry and not recorded_entry:
                 existing_entry.end_time = datetime.datetime.now().strftime("%H:%M:%S")
                 db.session.commit()
                 print("End time recorded in the database")
+            elif recorded_entry:
+                print("End time already recorded!")
             else:
                 print("No existing entry found for evening attendance")
     except Exception as e:
@@ -303,16 +307,23 @@ def video2():
 
 
 # Route which displays the attendance of all student for that current day
-@app.route('/display_attendance', methods=['GET'])
+@app.route('/display_attendance', methods=['GET', 'POST'])
 @login_required
 def display_attendance():
     if current_user.role == 'student':
         stop_camera()
+        current_date = datetime.datetime.now().date()
+        print(current_date)
         try:
-            current_date = datetime.datetime.now().date()
-            print(current_date)
-            data = Attendance.query.filter_by(date=current_date).all()
-            return render_template('display_data.html', data=data, current_date=current_date)
+            input_date = None
+            if request.method == 'POST':
+                input_date = request.form['date']
+            if input_date is None:
+                date = current_date
+            else:
+                date = input_date
+            data = Attendance.query.filter_by(date=date).all()
+            return render_template('display_data.html', data=data, date=date)
         except Exception as e:
             # Return a more informative error message or handle specific exceptions
             return str(e)
@@ -450,6 +461,7 @@ def download_attendance_csv():
 def register():
     stop_camera()
     error = None  # Initialize error variable
+    password_regex = r'^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$'
     if request.method == 'POST':
         username = request.form['username']
         reg_id = request.form['reg_id']
@@ -464,6 +476,8 @@ def register():
             error = 'Username already exists!'
         elif existing_reg_id:
             error = 'Registration ID already exists!'
+        elif not re.match(password_regex, password):
+            error = 'Password must contain at least one uppercase letter, one symbol, one number, and be at least 8 characters long!'
         else:
             # Create new user
             new_user = Users(username=username, reg_id=reg_id,
@@ -476,8 +490,6 @@ def register():
     # Pass error variable to template
     return render_template('register.html', error=error)
 
-    
-from sqlalchemy.exc import SQLAlchemyError
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -524,8 +536,6 @@ def findEncodings(imageslist):
     return encodeList
 
 # Route to trigger encoding manually
-
-
 @app.route('/generate_encodings', methods=['GET', 'POST'])
 def generate_encodings():
     if request.method == 'POST':
@@ -533,6 +543,8 @@ def generate_encodings():
         encoding_file_path = "Resources/EncodeFile.p"
         if os.path.exists(encoding_file_path):
             os.remove(encoding_file_path)
+            print("File removed")
+            flash("File Removed")
 
         # Importing the student images
         folderPath = 'uploads'
@@ -546,9 +558,11 @@ def generate_encodings():
         # Generate encodings
         try:
             print("Encoding started...")
+            flash("Encoding started...","success")
             encodeListKnown = findEncodings(imgList)
             encodeListKnownWithIds = [encodeListKnown, studentIds]
             print("Encoding complete")
+            flash("Encoding complete","success")
             with open(encoding_file_path, 'wb') as file:
                 pickle.dump(encodeListKnownWithIds, file)
             print("File Saved")
@@ -564,11 +578,28 @@ def generate_encodings():
 
 
 # Function for logout functionality
-@app.route('/logout')
+@app.route('/logout', methods=['GET','POST'])
 def logout():
     logout_user()
     session.clear()
     return redirect(url_for('login'))
+
+@app.route('/images')
+@login_required
+def images():
+    if current_user.role == 'admin':
+        image_files = [f for f in os.listdir(app.config['UPLOAD_FOLDER']) if os.path.isfile(os.path.join(app.config['UPLOAD_FOLDER'], f))]
+        image_no = len(image_files)
+        print(f"No of images: {image_no}")
+        return render_template('image_gallery.html', image_files=image_files, image_no=image_no)
+    else:
+        return 'UnAuthourized access'
+
+@app.route('/images/<filename>')
+def get_image(filename):
+    # Serve a specific image file
+    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
+
 
 # Route to the index page where the camera feed is displayed
 @app.route('/')
@@ -581,4 +612,4 @@ def index():
 if __name__ == '__main__':
     #app.run(debug=True,ssl_context=("cert.pem", "key.pem"))
     #app.run(debug=True)
-    hostedapp.run(debug=True,ssl_context=("cert.pem", "key.pem"))
+    hostedapp.run(debug=True,ssl_context=("cert.pem", "key.pem"), host='0.0.0.0')
