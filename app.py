@@ -600,7 +600,14 @@ def get_image(filename):
     # Serve a specific image file
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
-
+@app.route('/profile', methods=['GET', 'POST'])
+def profile():
+    if current_user.role == 'student':
+        name = session['username']
+        query = Attendance.query.filter_by(name=name).all()
+        return render_template('profile.html', query=query)
+    
+    
 # Route to the index page where the camera feed is displayed
 @app.route('/')
 def index():
@@ -612,4 +619,4 @@ def index():
 if __name__ == '__main__':
     #app.run(debug=True,ssl_context=("cert.pem", "key.pem"))
     #app.run(debug=True)
-    hostedapp.run(debug=True,ssl_context=("cert.pem", "key.pem"), host='0.0.0.0')
+    hostedapp.run(debug=True,ssl_context=(cert_path, key_path), host='0.0.0.0')

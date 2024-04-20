@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Date</th>
+                <th>Roll No</th>
+                <th>Division</th>
+                <th>Branch</th>
+                <th>Registration No</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for record in query %}
+            <tr>
+                <td>{{ record.id }}</td>
+                <td>{{ record.name }}</td>
+                <td>{{ record.start_time }}</td>
+                <td>{{ record.end_time }}</td>
+                <td>{{ record.date }}</td>
+                <td>{{ record.roll_no }}</td>
+                <td>{{ record.division }}</td>
+                <td>{{ record.branch }}</td>
+                <td>{{ record.reg_id }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
