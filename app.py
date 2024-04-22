@@ -3,6 +3,7 @@ from flask_login import LoginManager, UserMixin, login_user, logout_user, curren
 from flask_bcrypt import Bcrypt
 from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import asc
 from werkzeug.utils import secure_filename
 from werkzeug.middleware.dispatcher import DispatcherMiddleware
 from werkzeug.exceptions import NotFound
@@ -391,7 +392,6 @@ def add_user():
             return redirect(request.url)
 
 
-# Route for querying the attendace based on filters given for teachers
 @app.route('/get_attendance', methods=['GET'])
 @login_required
 def get_attendance():
@@ -404,7 +404,8 @@ def get_attendance():
 
         if query_parameters:
             attendance_records = Attendance.query.filter_by(
-                **query_parameters).all()
+    **query_parameters).order_by(asc(Attendance.reg_id)).all()
+
             if not attendance_records:
                 flash("No records available for the specified criteria")
         else:
@@ -508,7 +509,7 @@ def login():
                 session['username'] = user.username
                 session['role'] = user.role
                 flash('Welcome back, {}!'.format(user.username), 'success')
-
+                print(session)
                 # Redirect based on the user's role
                 if user.role == 'admin':
                     return redirect(url_for('data'))
@@ -604,8 +605,9 @@ def get_image(filename):
 def profile():
     if current_user.role == 'student':
         name = session['username']
-        query = Attendance.query.filter_by(name=name).all()
-        return render_template('profile.html', query=query)
+        data = Attendance.query.filter_by(name=name).all()
+        no_of_attendance = len(data)
+        return render_template('profile.html', data=data, no_of_attendance = no_of_attendance)
     
     
 # Route to the index page where the camera feed is displayed

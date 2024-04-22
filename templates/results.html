@@ -11,7 +11,7 @@
 <body>
     <div class="button-group">
         <a href="/Attendance_system" onclick="reloadPage()">Go to Index</a>
-        <form action="{{ url_for('logout') }}" method="post" id="logoutForm">
+        <form action="{{ url_for('logout') }}" method="post" class="logoutForm">
             <button type="submit">Logout</button>
         </form>
     </div>
@@ -50,14 +50,16 @@
     <br>
     <br>
 
-    <h1>Results</h1>
     <div class="result">
-        <h1>Attendance Results</h1>
+        <div class="heading">
+            <h1>Results</h1>
+            <h1>Attendance Results</h1>
+        </div>
         {% with messages = get_flashed_messages() %}
         {% if messages %}
         <ul>
             {% for message in messages %}
-            <li>{{ message }}</li>
+            <li style="color:black;">{{ message }}</li>
             {% endfor %}
         </ul>
         {% endif %}
@@ -79,14 +81,16 @@
             <tbody>
                 {% for record in attendance_records %}
                 <tr>
-                    <td>{{ record.name }}</td>
-                    <td>{{ record.start_time }}</td>
-                    <td>{{ record.end_time }}</td>
-                    <td>{{ record.date }}</td>
-                    <td>{{ record.roll_no }}</td>
-                    <td>{{ record.division }}</td>
-                    <td>{{ record.branch }}</td>
-                    <td>{{ record.reg_id }}</td>
+                    <td><b>{{ record.name }}</b></td>
+                    <b>
+                        <td>{{ record.start_time }}
+                    </b></td>
+                    <td><b>{{ record.end_time }}</b></td>
+                    <td><b>{{ record.date }}</b></td>
+                    <td><b>{{ record.roll_no }}</b></td>
+                    <td><b>{{ record.division }}</b></td>
+                    <td><b>{{ record.branch }}</b></td>
+                    <td><b>{{ record.reg_id }}</b></td>
                 </tr>
                 {% endfor %}
             </tbody>

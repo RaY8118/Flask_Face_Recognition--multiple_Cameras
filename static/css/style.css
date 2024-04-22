@@ -1,57 +1,51 @@
 /* style.css */
 
 body {
-    color:white;
+    color: white;
     font-family: roboto, sans-serif;
     margin: 0;
     padding: 0;
-    background-color:#B0C4DE;
-    background-image: url('../images/background.jpg');
+    background-color: #B0C4DE;
+    background-image: url('../images/back.jpg'); 
     background-size: cover; /* Cover the entire viewport */
-    background-position: center; /* Center the image */
+    background-position: center fixed; /* Center the image and keep it fixed *//* Center the image */
 }
 
-.data_form {
-    /* width: 60%;
+/* General styles for forms and tables */
+.data_form,
+.login_form,
+.query,
+.results {
+    color: rgb(10, 10, 235);
     margin: 50px auto;
     padding: 30px;
-    background-color: #F5F5F5;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
-    color: white;
+    padding-right: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 50px rgba(64, 64, 64, 0.552);
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background color */
+    backdrop-filter: blur(10px); /* Apply backdrop filter for frosted effect */
+    min-height: auto; /* Adjust as needed */
+}
+
+.login_form{
     width: 30%;
+}
+
+.data_form,
+.query{
+    width: 50%;
+}
+.profile-section {
+    color: rgb(10, 10, 235);
+    width: 25%; /* Set maximum width */
     margin: 50px auto;
     padding: 30px;
     border-radius: 25px;
     box-shadow: 0px 0px 50px rgba(64, 64, 64, 0.552);
-    background-color: rgba(103, 152, 250, 0.3); /* Semi-transparent background color */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background color */
     backdrop-filter: blur(10px); /* Apply backdrop filter for frosted effect */
-    min-height: 55vh;
+    min-height: auto; /* Adjust as needed */
 }
-.login_form {
-    color: white;
-    width: 30%;
-    margin: 50px auto;
-    padding: 30px;
-    border-radius: 25px;
-    box-shadow: 0px 0px 50px rgba(64, 64, 64, 0.552);
-    background-color: rgba(103, 152, 250, 0.3); /* Semi-transparent background color */
-    backdrop-filter: blur(10px); /* Apply backdrop filter for frosted effect */
-    min-height: 55vh;
-}
-
-/* Adjust backdrop filter for different levels of frosted effect */
-/* For more frosted effect, increase blur value or add opacity to background color */
-
-/* Apply backdrop filter only if supported */
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-    .login_form {
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
-        background: rgba(0, 0, 0, 0.4); /* Adjust the background color as needed */
-    }
-}
-
 h1 {
     font-family: roboto;
     text-align: center;
@@ -76,13 +70,14 @@ input[type="text"],
 input[type="file"],
 input[type="password"],
 select {
-    width: calc(100% - 20px);
+    width: 100%; /* Full width */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 button {
+    width: auto; /* Full width */
     padding: 10px 20px;
     background-color: #d65252;
     color: #fff;
@@ -90,69 +85,106 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin:40px;
 }
 
 button:hover {
     background-color: #0bd53d;
 }
-/* attendance table*/
-    table {
-        width: 80%; /* Adjust the width as needed */
-        margin: 0 auto; /* Set left and right margins to auto */
-        border-collapse: collapse;
-        margin-top: 40px;
-    }
-    
-    th {
-        border: 2px solid rgb(51, 50, 50);
-        padding: 8px;
-        text-align: center;
-    }
 
- td {
-    border: 2px solid rgb(51, 50, 50);
-    padding: 8px;
+/* Table styles */
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    margin-left: 35px;
+    color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 650;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
     text-align: left;
 }
 
-thead {
-    background-color: rgb(211, 228, 247);
-    text-align: center;
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
 }
 
 tbody tr:nth-child(even) {
     background-color: #f9f9f9;
-    margin: 50px auto;
-    padding: 30px;
-}
-/*attendance query*/
-.query {
-    width: 60%;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: rgb(211, 228, 247);
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-/*results*/
-.results {
-    width: 60%;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: rgb(211, 228, 247);
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-.container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px;
-}
-#links{
-    float:right;
 }
 
-.card-img-top{
+tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .data_form,
+    .login_form,
+    .query,
+    .results,
+    .profile-section {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .profile-section {
+        width: 40%;
+        margin: 20px auto;
+    }
     
-    width: auto;
+    .table-section {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
+.heading{
+    color: rgb(10, 10, 235);
+    width: 100%; /* Set maximum width */
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-top: 25px;
+    padding-bottom: 8px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 50px rgba(64, 64, 64, 0.552);
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background color */
+    backdrop-filter: blur(10px); /* Apply backdrop filter for frosted effect */
+    min-height: auto;
+}
+
+.main_section{
+    color: rgb(10, 10, 235);
+    width: 100%; /* Set maximum width */
+    margin: 10px auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 50px rgba(64, 64, 64, 0.552);
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background color */
+    backdrop-filter: blur(10px); /* Apply backdrop filter for frosted effect */
+    min-height: auto; /* Adjust as needed */
+    align-items: center;
+}
+
+.profile-btn {
+    position: absolute;
+    top: 10px; /* Adjust top position as needed */
+    right: 10px; /* Adjust right position as needed */
+    margin-right: 30px;
+}
+
+.logoutForm{
+    position: absolute;
+    top: 10px; /* Adjust top position as needed */
+    right: 10px; /* Adjust right position as needed */
+    margin-right: 30px;
 }
