@@ -10,7 +10,6 @@
 
 <body>
     <div class="button-group">
-        <a href="/Attendance_system" onclick="reloadPage()">Go to Index</a>
         <form action="{{ url_for('logout') }}" method="post" class="logoutForm">
             <button type="submit">Logout</button>
         </form>
@@ -111,5 +110,11 @@
 
     </div>
 </body>
+{% if error %}
+<script>
+    // Display an alert with the error message
+    alert("{{ error|safe }}");
+</script>
+{% endif %}
 
 </html>

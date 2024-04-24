@@ -9,6 +9,9 @@
 </head>
 
 <body>
+    <form action="{{ url_for('logout') }}" method="post"  class="logoutForm">
+        <button type="submit">Logout</button>
+    </form>
     {% with messages = get_flashed_messages() %}
     {% if messages %}
     <ul class="flash-messages">
@@ -50,11 +53,7 @@
                 <button type="submit">Submit</button>
             </div>
         </form>
-        <a href="/Attendance_system" onclick="reloadPage()">Go to Index</a>
         <a href="/Attendance_system/images" onclick="reloadPage()">Images</a>
-        <form action="{{ url_for('logout') }}" method="post" id="logoutForm">
-            <button type="submit">Logout</button>
-        </form>
         
     </div>
 
@@ -63,6 +62,12 @@
             location.reload();
         }
     </script>
+    {% if error %}
+    <script>
+        // Display an alert with the error message
+        alert("{{ error|safe }}");
+    </script>
+{% endif %}
 </body>
 
 </html>

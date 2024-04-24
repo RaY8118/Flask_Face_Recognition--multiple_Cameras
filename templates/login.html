@@ -13,17 +13,6 @@
 
     <div class="login_form">
         <h1>Login Page</h1>
-        {% with messages = get_flashed_messages(with_categories=true) %}
-        {% if messages %}
-        <ul>
-            {% for category, message in messages %}
-            <div class="alert alert-{{ category }}">
-                {{ message }}
-              </div>
-            {% endfor %}
-        </ul>
-        {% endif %}
-        {% endwith %}
         <form action="/Attendance_system/login" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="username">Username: </label>
@@ -39,13 +28,17 @@
         <a href="{{'register'}}">Dont't have a account! Register here</a>
     </div>
         <form action="/Attendance_system/get_attendance" method="GET" enctype="multipart/form-data">
-    <a href="/Attendance_system" onclick="reloadPage()">Go to Index</a>
-
+    
+            {% if error %}
+    <script>
+        // Display an alert with the error message
+        alert("{{ error|safe }}");
+    </script>
+{% endif %}
     <script>
         function reloadPage() {
             location.reload();
         }
-        
     </script>
 </body>
 

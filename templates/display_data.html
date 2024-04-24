@@ -25,20 +25,9 @@
 
 <body>
     <div class="container">
-        {% with messages = get_flashed_messages(with_categories=true) %}
-        {% if messages %}
-        <ul>
-            {% for category, message in messages %}
-            <div class="alert alert-{{ category }}">
-                {{ message }}
-            </div>
-            {% endfor %}
-        </ul>
-        {% endif %}
-        {% endwith %}
         <div class="heading">
             <h1>Attendance Data</h1>
-            <h2>Attendance for date {{ current_date }}</h2>
+            <h2>Attendance for date {{ date }}</h2>
         </div>
         <div class="main_section">
             <form action="/Attendance_system/display_attendance" method="post">
@@ -94,6 +83,12 @@
             location.reload();
         }
     </script>
+    {% if error %}
+    <script>
+        // Display an alert with the error message
+        alert("{{ error|safe}}");
+    </script>
+{% endif %}
 </body>
 
 </html>

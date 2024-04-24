@@ -83,7 +83,7 @@ class Student_data(db.Model):
     division = db.Column(db.String(80), nullable=False)
     branch = db.Column(db.String(80), nullable=False)
     regid = db.Column(db.String(80), unique=True, nullable=False)
-    
+
 
 # Model of Attendance table
 class Attendance(db.Model):
@@ -314,7 +314,6 @@ def display_attendance():
     if current_user.role == 'student':
         stop_camera()
         current_date = datetime.datetime.now().date()
-        print(current_date)
         try:
             input_date = None
             if request.method == 'POST':
@@ -332,6 +331,8 @@ def display_attendance():
         return 'UnAuthorized access'
 
 # Route to add new studnets page for admins
+
+
 @app.route('/data')
 @login_required
 def data():
@@ -356,11 +357,13 @@ def add_user():
 
     if existing_student:
         # Student already exists, handle the error (e.g., display a message)
+        error_message = 'Student already exists!'
         flash('Student already exists!', 'error')
         return redirect(url_for('data'))
     else:
         # Check if the post request has the file part
         if 'image' not in request.files:
+            error_message = 'No file part'
             flash('No file part')
             return redirect(request.url)
 
@@ -368,6 +371,7 @@ def add_user():
 
         # If the user does not select a file, the browser submits an empty file without a filename
         if file.filename == '':
+            error_message = 'No selected file'
             flash('No selected file')
             return redirect(request.url)
 
@@ -384,9 +388,11 @@ def add_user():
                                 division=division, branch=branch, regid=regid)
             db.session.add(user)
             db.session.commit()
+            error_message = 'Student added successfully!'
             flash('Student added successfully!', 'success')
-            return redirect(url_for('data'))
+            return render_template('data.html', error=error_message)
         else:
+            error_message = 'Invalid file extension. Allowed extensions are: png, jpg, jpeg, gif'
             flash(
                 'Invalid file extension. Allowed extensions are: png, jpg, jpeg, gif', 'error')
             return redirect(request.url)
@@ -404,7 +410,7 @@ def get_attendance():
 
         if query_parameters:
             attendance_records = Attendance.query.filter_by(
-    **query_parameters).order_by(asc(Attendance.reg_id)).all()
+                **query_parameters).order_by(asc(Attendance.reg_id)).all()
 
             if not attendance_records:
                 flash("No records available for the specified criteria")
@@ -417,12 +423,13 @@ def get_attendance():
         return 'UnAuthorized access'
 
 # Function to download the attendance of particular date in cvs format
+
+
 @app.route('/download_attendance_csv', methods=['POST'])
 def download_attendance_csv():
     try:
         # Assuming the date is submitted via a form
         date = request.form.get('date')
-        print(date)
         if not date:
             flash("Date not provided for downloading.")
             return redirect(url_for('get_attendance'))
@@ -443,18 +450,25 @@ def download_attendance_csv():
             writer.writerow([record.name, record.start_time, record.end_time, record.date,
                             record.roll_no, record.division, record.branch, record.reg_id])
 
-        # Create response
-        response = make_response(output.getvalue())
-        filename = f"attendance_records_{date}.csv"
-        response.headers["Content-Disposition"] = f"attachment; filename={filename}"
-        response.headers["Content-type"] = "text/csv"
+        # Save CSV file to a specified folder
+        folder_path = 'downloads'
+        if not os.path.exists(folder_path):
+            os.makedirs(folder_path)
 
-        return response
+        file_path = os.path.join(folder_path, f"attendance_records_{date}.csv")
+        with open(file_path, 'w') as f:
+            # Remove trailing newline characters
+            f.write(output.getvalue().strip())
+
+        flash("Attendance records downloaded successfully.")
+        error_message = 'Attendance records downloaded successfully.'
+        return render_template('results.html', error=error_message)
     except Exception as e:
         logging.exception(
             "Error occurred while generating CSV file: %s", str(e))
         flash("An error occurred while generating CSV file.")
-        return redirect(url_for('get_attendance'))
+        error_message = 'An error occurred while generating CSV file.'
+        return render_template('results.html', error=error_message)
 
 
 # Route to registration page for viewing the attendance
@@ -475,8 +489,10 @@ def register():
 
         if existing_user:
             error = 'Username already exists!'
+            print('Username already exists!')
         elif existing_reg_id:
             error = 'Registration ID already exists!'
+            print('Registration ID already exists!')
         elif not re.match(password_regex, password):
             error = 'Password must contain at least one uppercase letter, one symbol, one number, and be at least 8 characters long!'
         else:
@@ -485,8 +501,9 @@ def register():
                              password=hashed_pass, role=role)
             db.session.add(new_user)
             db.session.commit()
+            error = 'Registration successfull!'
             flash('Registration successful!', 'success')
-            return redirect(url_for('login'))
+            return render_template('login.html', error=error)
 
     # Pass error variable to template
     return render_template('register.html', error=error)
@@ -499,7 +516,7 @@ def login():
     elif request.method == 'POST':
         username = request.form.get('username')
         password = request.form.get('password')
-        
+
         try:
             user = Users.query.filter(Users.username == username).first()
 
@@ -508,26 +525,31 @@ def login():
                 session['user_id'] = user.id
                 session['username'] = user.username
                 session['role'] = user.role
-                flash('Welcome back, {}!'.format(user.username), 'success')
-                print(session)
+                error_message = 'Welcome back, {}!'.format(user.username)
+                flash(error_message, 'success')
                 # Redirect based on the user's role
                 if user.role == 'admin':
-                    return redirect(url_for('data'))
+                    flash(error_message, 'success')
+                    return render_template('data.html', error=error_message)
                 elif user.role == 'teacher':
-                    return redirect(url_for('get_attendance'))
+                    flash(error_message, 'success')
+                    return render_template('results.html', error=error_message)
                 elif user.role == 'student':
-                    return redirect(url_for('display_attendance'))
+                    flash(error_message, 'success')
+                    return render_template('display_data.html', error=error_message)
             else:
+                error_message = 'Incorrect username or password. Please try again.',
                 flash('Incorrect username or password. Please try again.', 'error')
         except SQLAlchemyError as e:
-            flash('An error occurred while processing your request. Please try again later.', 'error')
+            error_message = 'An error occurred while processing your request. Please try again later.'
+            flash(
+                'An error occurred while processing your request. Please try again later.', 'error')
             # Log the exception for further investigation
             print(e)
     # If the request method is not GET or POST, or if the login process fails for any reason
-    return redirect(url_for('login'))
+    return render_template('login.html', error=error_message)
 
-        
-        
+
 def findEncodings(imageslist):
     encodeList = []
     for img in imageslist:
@@ -537,6 +559,8 @@ def findEncodings(imageslist):
     return encodeList
 
 # Route to trigger encoding manually
+
+
 @app.route('/generate_encodings', methods=['GET', 'POST'])
 def generate_encodings():
     if request.method == 'POST':
@@ -559,14 +583,17 @@ def generate_encodings():
         # Generate encodings
         try:
             print("Encoding started...")
-            flash("Encoding started...","success")
+            error_message = 'Encoding started...'
+            flash("Encoding started...", "success")
             encodeListKnown = findEncodings(imgList)
             encodeListKnownWithIds = [encodeListKnown, studentIds]
             print("Encoding complete")
-            flash("Encoding complete","success")
+            error_message = 'Encoding complete'
+            flash("Encoding complete", "success")
             with open(encoding_file_path, 'wb') as file:
                 pickle.dump(encodeListKnownWithIds, file)
             print("File Saved")
+            error_message = 'Encodings generated successfully!'
             flash('Encodings generated successfully!', 'success')
         except Exception as e:
             print("Error:", e)
@@ -575,31 +602,36 @@ def generate_encodings():
         # Redirect to homepage or any other page after encoding
         return redirect(url_for('data'))
 
-    return render_template('data.html')
+    return render_template('data.html', error=error_message)
 
 
 # Function for logout functionality
-@app.route('/logout', methods=['GET','POST'])
+@app.route('/logout', methods=['GET', 'POST'])
 def logout():
+    error_message = 'Logout Successfully!!'
     logout_user()
     session.clear()
-    return redirect(url_for('login'))
+    return render_template('login.html', error=error_message)
+
 
 @app.route('/images')
 @login_required
 def images():
     if current_user.role == 'admin':
-        image_files = [f for f in os.listdir(app.config['UPLOAD_FOLDER']) if os.path.isfile(os.path.join(app.config['UPLOAD_FOLDER'], f))]
+        image_files = [f for f in os.listdir(app.config['UPLOAD_FOLDER']) if os.path.isfile(
+            os.path.join(app.config['UPLOAD_FOLDER'], f))]
         image_no = len(image_files)
         print(f"No of images: {image_no}")
         return render_template('image_gallery.html', image_files=image_files, image_no=image_no)
     else:
         return 'UnAuthourized access'
 
+
 @app.route('/images/<filename>')
 def get_image(filename):
     # Serve a specific image file
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
+
 
 @app.route('/profile', methods=['GET', 'POST'])
 def profile():
@@ -607,9 +639,9 @@ def profile():
         name = session['username']
         data = Attendance.query.filter_by(name=name).all()
         no_of_attendance = len(data)
-        return render_template('profile.html', data=data, no_of_attendance = no_of_attendance)
-    
-    
+        return render_template('profile.html', data=data, no_of_attendance=no_of_attendance)
+
+
 # Route to the index page where the camera feed is displayed
 @app.route('/')
 def index():
@@ -619,6 +651,7 @@ def index():
 
 # Function to start to the app
 if __name__ == '__main__':
-    #app.run(debug=True,ssl_context=("cert.pem", "key.pem"))
-    #app.run(debug=True)
-    hostedapp.run(debug=True,ssl_context=(cert_path, key_path), host='0.0.0.0')
+    # app.run(debug=True,ssl_context=("cert.pem", "key.pem"))
+    # app.run(debug=True)
+    hostedapp.run(debug=True, ssl_context=(
+        cert_path, key_path), host='0.0.0.0')

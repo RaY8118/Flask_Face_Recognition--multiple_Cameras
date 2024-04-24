@@ -37,17 +37,17 @@
         </form>
         <a href="{{'login'}}">Already have a account! Login here</a>
     </div>
-
-    {%if error%}
-    <p class="error">{{error}}</p>
-    {%endif%}
-    <a href="/" onclick="reloadPage()">Go to Index</a>
-
-    <script>
+    
         function reloadPage() {
             location.reload();
         }
     </script>
+    {% if error %}
+    <script>
+        // Display an alert with the error message
+        alert("{{ error|safe }}");
+    </script>
+{% endif %}
 </body>
 
 </html>
