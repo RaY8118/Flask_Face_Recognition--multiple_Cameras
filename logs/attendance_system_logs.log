@@ -1197,4 +1197,435 @@ Press CTRL+C to quit
  * Debugger PIN: 883-705-222
 127.0.0.1 - - [19/Apr/2024 11:18:29] "GET /Attendance_system/login HTTP/1.1" 200 -
 127.0.0.1 - - [19/Apr/2024 11:18:29] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
-Terminate batch job (Y/N)? 
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.0.101:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 883-705-222
+127.0.0.1 - - [24/Apr/2024 16:50:05] "GET /Attendance_system/login HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2024 16:50:05] "GET /Attendance_system/static/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2024 16:50:05] "GET /Attendance_system/static/images/back.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2024 16:50:05] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [24/Apr/2024 16:50:17] "POST /Attendance_system/login HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2024 16:50:17] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py:121: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  return db.session.query(Users).get(int(user_id))
+127.0.0.1 - - [24/Apr/2024 16:50:24] "POST /Attendance_system/display_attendance HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2024 16:50:24] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.122.164:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 883-705-222
+192.168.122.236 - - [25/Apr/2024 15:55:22] "GET /Attendance_system/login HTTP/1.1" 200 -
+192.168.122.236 - - [25/Apr/2024 15:55:23] "GET /Attendance_system/static/css/style.css HTTP/1.1" 200 -
+192.168.122.236 - - [25/Apr/2024 15:55:23] "GET /Attendance_system/static/images/back.jpg HTTP/1.1" 200 -
+192.168.122.236 - - [25/Apr/2024 15:55:23] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.122.236 - - [25/Apr/2024 15:55:41] "GET /Attendance_system/login HTTP/1.1" 200 -
+192.168.122.236 - - [25/Apr/2024 15:55:42] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+192.168.122.236 - - [25/Apr/2024 15:55:44] "GET /Attendance_system/login HTTP/1.1" 200 -
+192.168.122.236 - - [25/Apr/2024 15:55:44] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+192.168.122.236 - - [25/Apr/2024 15:55:49] "GET /Attendance_system/register HTTP/1.1" 200 -
+192.168.122.236 - - [25/Apr/2024 15:55:49] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+192.168.122.236 - - [25/Apr/2024 15:55:50] "GET /Attendance_system/login HTTP/1.1" 200 -
+192.168.122.236 - - [25/Apr/2024 15:55:50] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+192.168.122.236 - - [25/Apr/2024 15:55:57] "GET /Attendance_system/register HTTP/1.1" 200 -
+192.168.122.236 - - [25/Apr/2024 15:55:58] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+192.168.122.236 - - [25/Apr/2024 15:55:59] "GET /Attendance_system/login HTTP/1.1" 200 -
+192.168.122.236 - - [25/Apr/2024 15:55:59] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+192.168.122.236 - - [25/Apr/2024 15:56:31] "GET /Attendance_system/login HTTP/1.1" 200 -
+192.168.122.236 - - [25/Apr/2024 15:56:31] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+192.168.122.236 - - [25/Apr/2024 15:56:35] "GET /Attendance_system HTTP/1.1" 308 -
+192.168.122.236 - - [25/Apr/2024 15:56:35] "GET /Attendance_system/ HTTP/1.1" 200 -
+192.168.122.236 - - [25/Apr/2024 15:56:36] "GET /Attendance_system/video1 HTTP/1.1" 200 -
+Error: (MySQLdb.OperationalError) (2002, "Can't connect to server on 'localhost' (10061)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+None
+Error: (MySQLdb.OperationalError) (2002, "Can't connect to server on 'localhost' (10061)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+None
+[tcp @ 0000029071e1bb80] Connection to tcp://192.168.211.37:8080 failed: Error number -138 occurred
+Terminate batch job (Y/N)?  * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.0.103:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 883-705-222
+127.0.0.1 - - [25/Apr/2024 18:34:43] "GET /Attendance_system/login HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:34:43] "GET /Attendance_system/static/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:34:43] "GET /Attendance_system/static/images/back.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:34:43] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [25/Apr/2024 18:35:05] "POST /Attendance_system/login HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:35:05] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py:121: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  return db.session.query(Users).get(int(user_id))
+127.0.0.1 - - [25/Apr/2024 18:35:20] "GET /Attendance_system/images HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:35:20] "GET /Attendance_system/images/16122.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:35:20] "GET /Attendance_system/images/16210.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:35:20] "GET /Attendance_system/images/16489.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:35:20] "GET /Attendance_system/images/16462.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:35:20] "GET /Attendance_system/images/16894.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:35:20] "GET /Attendance_system/images/16574.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:35:20] "GET /Attendance_system/images/16811.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:35:20] "GET /Attendance_system/images/16802.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:35:20] "GET /Attendance_system/images/16658.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:35:20] "GET /Attendance_system/images/16907.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:35:20] "GET /Attendance_system/images/17612.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:35:20] "GET /Attendance_system/images/16464.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:35:20] "GET /Attendance_system/images/17704.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:35:20] "GET /Attendance_system/images/16355.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:35:20] "GET /Attendance_system/images/16380.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:35:20] "GET /Attendance_system/images/16400.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:35:20] "GET /Attendance_system/images/16415.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:35:27] "GET /Attendance_system/data HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:35:27] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+[2024-04-25 18:37:30,494] ERROR in app: Exception on /add_user [POST]
+Traceback (most recent call last):
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1960, in _exec_single_context
+    self.dialect.do_execute(
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1062, "Duplicate entry '35' for key 'rollno'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "D:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\app.py", line 390, in add_user
+    db.session.commit()
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1972, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4431, in _flush
+    with util.safe_reraise():
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1408, in execute
+    return meth(
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\sql\elements.py", line 513, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1630, in _execute_clauseelement
+    ret = self._execute_context(
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1839, in _execute_context
+    return self._exec_single_context(
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1979, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 2335, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1960, in _exec_single_context
+    self.dialect.do_execute(
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.IntegrityError: (MySQLdb.IntegrityError) (1062, "Duplicate entry '35' for key 'rollno'")
+[SQL: INSERT INTO student_data (name, rollno, division, branch, regid) VALUES (%s, %s, %s, %s, %s)]
+[parameters: ('Shruti Paikrao', '35', 'TE1', 'ECS', '15512')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+127.0.0.1 - - [25/Apr/2024 18:37:30] "POST /Attendance_system/add_user HTTP/1.1" 500 -
+127.0.0.1 - - [25/Apr/2024 18:37:43] "GET /Attendance_system/data HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:38:46] "POST /Attendance_system/add_user HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:38:46] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:38:50] "GET /Attendance_system/images HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:38:50] "GET /Attendance_system/images/16415.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:38:50] "GET /Attendance_system/images/16462.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:38:50] "GET /Attendance_system/images/16894.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:38:50] "GET /Attendance_system/images/17612.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:38:50] "GET /Attendance_system/images/17704.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:38:50] "GET /Attendance_system/images/16574.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:38:50] "GET /Attendance_system/images/16464.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:38:50] "GET /Attendance_system/images/16811.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:38:50] "GET /Attendance_system/images/16802.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:38:50] "GET /Attendance_system/images/16658.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:38:50] "GET /Attendance_system/images/16907.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:38:50] "GET /Attendance_system/images/16122.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:38:50] "GET /Attendance_system/images/16210.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:38:50] "GET /Attendance_system/images/15512.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:38:50] "GET /Attendance_system/images/16355.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:38:50] "GET /Attendance_system/images/16489.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:38:50] "GET /Attendance_system/images/16380.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:38:50] "GET /Attendance_system/images/16400.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:40:29] "POST /Attendance_system/generate_encodings HTTP/1.1" 302 -
+127.0.0.1 - - [25/Apr/2024 18:40:29] "GET /Attendance_system/data HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:40:29] "GET /Attendance_system/static/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:40:29] "GET /Attendance_system/static/images/back.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:40:37] "GET /Attendance_system/video1 HTTP/1.1" 200 -
+Error on request:
+Traceback (most recent call last):
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\werkzeug\serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\werkzeug\serving.py", line 326, in execute
+    write(data)
+  File "d:\Codes\ML\Flask_Face_Recognition--multiple_Cameras\.venv\lib\site-packages\werkzeug\serving.py", line 299, in write
+    self.wfile.write(b"\r\n")
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\socketserver.py", line 826, in write
+    self._sock.sendall(b)
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1237, in sendall
+    v = self.send(byte_view[count:])
+  File "c:\Users\Parth\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1206, in send
+    return self._sslobj.write(data)
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:2426)
+127.0.0.1 - - [25/Apr/2024 18:41:22] "GET /Attendance_system/data HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:41:22] "GET /Attendance_system/static/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:41:22] "GET /Attendance_system/static/images/back.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:41:52] "POST /Attendance_system/logout HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:41:52] "GET /Attendance_system/static/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:41:52] "GET /Attendance_system/static/images/back.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:41:58] "GET /Attendance_system/register HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:41:59] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:42:00] "GET /Attendance_system/login HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:42:01] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:42:10] "POST /Attendance_system/login HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:42:10] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:42:14] "POST /Attendance_system/profile HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:42:14] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:42:50] "GET /Attendance_system/display_attendance HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:42:50] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [25/Apr/2024 18:43:09] "POST /Attendance_system/logout HTTP/1.1" 200 -
+127.0.0.1 - - [25/Apr/2024 18:43:09] "GET /Attendance_system/static/css/style.css HTTP/1.1" 304 -
+No of images: 17
+No of images: 18
+File removed
+15512
+16122
+16210
+16355
+16380
+16400
+16415
+16462
+16464
+16489
+16574
+16658
+16802
+16811
+16894
+16907
+17612
+17704
+Encoding started...
+Encoding complete
+File Saved
+None
+Nivedita Palan
+Nivedita Palan
+Nivedita Palan
+Nivedita Palan
+Nivedita Palan
+Nivedita Palan
+Start time and student data recorded in the database
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Prathmesh Gilbile
+Prathmesh Gilbile
+Your Attendance is already recorded before
+Nivedita Palan
+None
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Anuraag Patil
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Nivedita Palan
+Nivedita Palan
+Start time and student data recorded in the database
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Nivedita Palan
+Start time and student data recorded in the database
+Nivedita Palan
+Your Attendance is already recorded before
+Prathmesh Gilbile
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Anuraag Patil
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Nivedita Palan
+Nivedita Palan
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+None
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Parth Ghadi
+Your Attendance is already recorded before
+Parth Ghadi
+Your Attendance is already recorded before
+Parth Ghadi
+Your Attendance is already recorded before
+Parth Ghadi
+Your Attendance is already recorded before
+Parth Ghadi
+Error: (MySQLdb.IntegrityError) (1048, "Column 'name' cannot be null")
+[SQL: INSERT INTO attendance (name, start_time, end_time, date, roll_no, division, branch, reg_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (None, '18:41:09', None, datetime.date(2024, 4, 25), None, None, None, '17612')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Your Attendance is already recorded before
+Parth Ghadi
+Your Attendance is already recorded before
+Parth Ghadi
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Nivedita Palan
+Nivedita Palan
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+Parth Ghadi
+Your Attendance is already recorded before
+Nivedita Palan
+Your Attendance is already recorded before
+None
+Your Attendance is already recorded before
+Prathmesh Gilbile
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Parth Ghadi
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Parth Ghadi
+Your Attendance is already recorded before
+Parth Ghadi
+Your Attendance is already recorded before
+Parth Ghadi
+Error: (MySQLdb.IntegrityError) (1048, "Column 'name' cannot be null")
+[SQL: INSERT INTO attendance (name, start_time, end_time, date, roll_no, division, branch, reg_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: (None, '18:41:19', None, datetime.date(2024, 4, 25), None, None, None, '17612')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Parth Ghadi
+Your Attendance is already recorded before
+Parth Ghadi
+Your Attendance is already recorded before
+Parth Ghadi
+Parth Ghadi
+Your Attendance is already recorded before
+Parth Ghadi
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Your Attendance is already recorded before
+Your Attendance is already recorded before

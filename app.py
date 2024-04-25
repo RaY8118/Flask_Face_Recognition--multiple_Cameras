@@ -1,4 +1,4 @@
-from flask import Flask, render_template, Response, flash, request, redirect, url_for, session, make_response, flash, send_from_directory
+from flask import Flask, render_template, Response, flash, request, redirect, url_for, session, flash, send_from_directory
 from flask_login import LoginManager, UserMixin, login_user, logout_user, current_user, login_required
 from flask_bcrypt import Bcrypt
 from flask_migrate import Migrate
@@ -37,7 +37,7 @@ encodeListKnown, studentIds = encodeListKnownWithIds
 
 # App configs
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'abc'
+app.config['SECRET_KEY'] = params['secret_key']
 app.config['SQLALCHEMY_DATABASE_URI'] = params['sql_url']
 db = SQLAlchemy(app)
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
@@ -93,7 +93,7 @@ class Attendance(db.Model):
     start_time = db.Column(db.String(20))
     end_time = db.Column(db.String(20))
     date = db.Column(db.Date, default=datetime.date.today)
-    roll_no = db.Column(db.String(20), nullable=False)
+    roll_no = db.Column(db.String(20), nullable=False, unique=False)
     division = db.Column(db.String(10))
     branch = db.Column(db.String(100))
     reg_id = db.Column(db.String(100))
@@ -330,7 +330,7 @@ def display_attendance():
     else:
         return 'UnAuthorized access'
 
-# Route to add new studnets page for admins
+# Route to add new students page for admins
 
 
 @app.route('/data')
