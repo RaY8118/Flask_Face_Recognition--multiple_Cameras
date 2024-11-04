@@ -1,8 +1,8 @@
 {
     "params": {
         "sql_url": "mysql://root:@localhost/college",
-        "camera_index_1": "https://192.168.0.103:8080/video",
-        "camera_index_2": "https://192.168.0.100:8080/video",
+        "camera_index_1": 0,
+        "camera_index_2": 1,
         "morning_time": "9",
         "evening_time": "19",
         "cert_path": "keys/cert.pem",
