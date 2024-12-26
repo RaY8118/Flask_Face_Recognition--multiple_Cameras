@@ -30,7 +30,7 @@ numpy==1.26.3
 opencv-python==4.9.0.80
 packaging==23.2
 pandas==2.2.1
-pillow==10.2.0
+pillow==10.3.0
 pycparser==2.22
 pygrabber==0.2
 PyMySQL==1.1.1
